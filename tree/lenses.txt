@@ -1,0 +1,6 @@
+young	myope		reduced	nolenses no
+young	myope		normal	soft no
+
+old	hyper		reduced	nolenses no
+old	hyper		normal	soft no
+
