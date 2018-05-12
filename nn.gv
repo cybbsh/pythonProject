@@ -1,0 +1,82 @@
+digraph G {
+ 
+    rankdir=LR
+
+    splines=line
+
+    nodesep=.05;
+
+    node [label=""];
+
+    subgraph cluster_0 {
+ 
+    color=white;
+
+    node [style=solid,color=blue4];
+
+    
+    node [shape=circle,height=.5];
+
+    a00 a01 a02 a03 a04 ;
+
+    
+    label = "layer input(5)";
+
+    }
+
+    subgraph cluster_1 {
+ 
+    color=white;
+
+    node [style=solid,color=red2];
+
+    
+    node [shape=circle,height=.5];
+
+    a10 a11 a12 ;
+
+    
+    label = "layer h1(3)";
+
+    }
+
+    subgraph cluster_2 {
+ 
+    color=white;
+
+    node [style=solid,color=seagreen2];
+
+    
+    node [shape=circle,height=.5];
+
+    a20 ;
+
+    
+    label = "layer out(1)";
+
+    }
+
+    
+
+    a00 -> a10
+a00 -> a11
+a00 -> a12
+a01 -> a10
+a01 -> a11
+a01 -> a12
+a02 -> a10
+a02 -> a11
+a02 -> a12
+a03 -> a10
+a03 -> a11
+a03 -> a12
+a04 -> a10
+a04 -> a11
+a04 -> a12
+a10 -> a20
+a11 -> a20
+a12 -> a20
+
+
+    } 
+    
